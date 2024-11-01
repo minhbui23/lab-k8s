@@ -32,8 +32,7 @@ In this lab, we will:
 2. **Get running service in cluster**
     ```bash
     kubectl get svc 
+  With these commands you can see all of service are running and you can access to nginx-service via:
+    ```bash  
     
- With these commands you can see all of service are running and you can access to nginx-service via:
-
-    ```bash
     http://<Node-IP>:<Node-Port>
