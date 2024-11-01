@@ -1,20 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: static-web
+  name: nginx
   namespace: dev
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      web: static-web
+      web: nginx
   template:
     metadata:
       labels:
-        web: static-web
+        web: nginx
     spec:
       containers:
-      - image: minhbui1/static-web
-        name: static-web
+      - image: nginx
+        name: nginx:latest
         ports:
         - containerPort: 80
+
