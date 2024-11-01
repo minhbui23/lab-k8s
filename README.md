@@ -39,6 +39,6 @@ In this lab, we will:
     ```
 
 With these commands, you can see all of the services running and you can access the nginx-service via:
-    ```bash
-    http://<Node-IP>:<Node-Port>
-    ```
+```bash
+http://<Node-IP>:<Node-Port>
+```
