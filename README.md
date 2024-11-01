@@ -19,23 +19,21 @@ In this lab, we will:
 
 ## Deployment Steps
 1. **Apply the Nginx Deployment**
-    \```bash
+    ```bash
     kubectl apply -f nginx-deploy.yaml
-    \```
 2. **Expose Nginx Deployment with Service type NodePort**
-    \```bash
+    ```bash
     kubectl apply -f nginx-service.yaml
-    \```
+
 ## Accessing the Nginx Service
 1. **Get running Pod**
-    \```bash
+    ```bash
     kubectl get pod -o wide
-    \```
 2. **Get running service in cluster**
-    \```bash
+    ```bash
     kubectl get svc 
-    \```
+    
  With these commands you can see all of service are running and you can access to nginx-service via:
-    \```bash
+
+    ```bash
     http://<Node-IP>:<Node-Port>
-    \```
