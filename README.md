@@ -27,16 +27,18 @@ In this lab, we will:
     kubectl apply -f nginx-service.yaml
     ```
 ## Accessing the Nginx Service
+
 1. **Get running Pod**
     ```bash
     kubectl get pod -o wide
     ```
+
 2. **Get running service in cluster**
     ```bash
-    kubectl get svc 
+    kubectl get svc
     ```
- With these commands you can see all of service are running and you can access to nginx-service via:
- 
+
+With these commands, you can see all of the services running and you can access the nginx-service via:
     ```bash
     http://<Node-IP>:<Node-Port>
     ```
