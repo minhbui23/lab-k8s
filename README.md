@@ -33,6 +33,4 @@ In this lab, we will:
     ```bash
     kubectl get svc 
 with these commands you can see all of service are running and you can access to nginx-service via:
-
-    ```bash
     http://<Node-IP>:<Node-Port>
