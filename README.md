@@ -2,12 +2,6 @@
 
 This lab covers the steps to deploy an Nginx web server on a Kubernetes cluster using a Deployment and expose it using a NodePort Service.
 
-## Table of Contents
-- [Overview](#overview)
-- [Prerequisites](#prerequisites)
-- [Deployment Steps](#deployment-steps)
-- [Accessing the Nginx Service](#accessing-the-nginx-service)
-
 ## Overview
 In this lab, we will:
 1. Create a Deployment for Nginx with 2 replicas.
@@ -42,3 +36,5 @@ With these commands, you can see all of the services running and you can access 
 ```bash
 http://<Node-IP>:<Node-Port>
 ```
+
+# Lab 2: Deploy Static Web
