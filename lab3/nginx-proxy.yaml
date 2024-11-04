@@ -20,7 +20,8 @@ spec:
             - containerPort: 80
           volumeMounts:
             - name: nginx-config-volume
-              mountPath: /etc/nginx/conf.d/nginx-proxy.conf                    
+              mountPath: /etc/nginx/conf.d/nginx-proxy.conf      
+              subPath: nginx.conf              
       volumes:
         - name: nginx-config-volume
           configMap:
