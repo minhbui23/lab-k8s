@@ -19,3 +19,18 @@ spec:
         ports:
         - containerPort: 80
 
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: web1-service
+  namespace: dev 
+spec:
+  type: NodePort
+  selector:
+    web: web1
+  ports:
+    - port: 80         
+      targetPort: 80 
+      nodePort: 30001

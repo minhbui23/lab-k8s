@@ -18,3 +18,19 @@ spec:
         name: web2
         ports:
         - containerPort: 80
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: web2-service
+  namespace: dev 
+spec:
+  type: NodePort
+  selector:
+    web: web2
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30002
