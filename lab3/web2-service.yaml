@@ -1,12 +1,12 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: web1-service
+  name: web2-service
   namespace: dev 
 spec:
   type: NodePort
   selector:
-    web: web1
+    web: web2
   ports:
-    - port: 80         
-      targetPort: 80 
+    - port: 80
+      targetPort: 80

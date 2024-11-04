@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: static-web
+  name: web2
   namespace: dev
 spec:
-  replicas: 3
+  replicas: 2
   selector:
     matchLabels:
-      web: static-web
+      web: web2
   template:
     metadata:
       labels:
-        web: static-web
+        web: web2
     spec:
       containers:
-      - image: minhbui1/static-web
-        name: static-web
+      - image: minhbui1/web2
+        name: web2
         ports:
         - containerPort: 80
