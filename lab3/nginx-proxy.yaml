@@ -4,7 +4,7 @@ metadata:
   name: nginx-proxy
   namespace: dev
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
       app: nginx-proxy
@@ -20,7 +20,7 @@ spec:
             - containerPort: 80
           volumeMounts:
             - name: nginx-config-volume
-              mountPath: /etc/nginx/conf.d/nginx-proxy.conf      
+              mountPath: /etc/nginx/conf.d/default.conf      
               subPath: nginx.conf              
       volumes:
         - name: nginx-config-volume
