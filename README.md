@@ -1,3 +1,8 @@
+# Prerequisites
+Before you begin the labs, ensure you have a Kubernetes Cluster and Kubectl. If not, you can follow my guide below to install Kubernetes Cluster:
+```bash
+https://big-coast-c92.notion.site/Setup-k8s-cluster-ubuntu-114970f00e728098956dd042b9bf3a72
+```
 # Lab 1: Deploying Nginx on Kubernetes
 1. **Apply the Nginx Deployment and expose Nginx deployment with Service type NodePort**
     ```bash
